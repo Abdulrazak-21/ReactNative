@@ -8,6 +8,7 @@ import CounterScreen from '../Navigation/CounterScreen';
 import Spotify from '../Navigation/Spotify';
 import CheckOutScreen from '../Navigation/CheckOutScreen';
 import Timer from './Timer';
+import CanaraBank from '../Navigation/CanaraBank';
 
 
 const Stack = createNativeStackNavigator();
@@ -27,6 +28,9 @@ const NavigationScreen = () => {
                     headerShown: false,
                 }} />
                 <Stack.Screen name="Timer Screen" component={Timer} options={{
+                    headerShown: false,
+                }} />
+                <Stack.Screen name="CanaraBank Screen" component={CanaraBank} options={{
                     headerShown: false,
                 }} />
             </Stack.Navigator>

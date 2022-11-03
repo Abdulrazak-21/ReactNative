@@ -25,8 +25,14 @@ function HomeScreen({ navigation }) {
       </View>
       <View style={styles.HomeScreenButton}>
         <Button
-          title="Go to Check Out Screen"
-          onPress={() => navigation.navigate('CheckOut Screen')}
+          title="Go to Timer Screen"
+          onPress={() => navigation.navigate('Timer Screen')}
+        />
+      </View>
+      <View style={styles.HomeScreenButton}>
+        <Button
+          title="Go to CanaraBank Screen"
+          onPress={() => navigation.navigate('CanaraBank Screen')}
         />
       </View>
     </View>
