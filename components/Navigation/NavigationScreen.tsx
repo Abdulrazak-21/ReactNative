@@ -1,11 +1,14 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Header } from '@react-navigation/stack';
+
 
 import HomeScreen from '../Navigation/HomeScreen';
 import CounterScreen from '../Navigation/CounterScreen';
 import Spotify from '../Navigation/Spotify';
 import CheckOutScreen from '../Navigation/CheckOutScreen';
-import { Header } from '@react-navigation/stack';
+import Timer from './Timer';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +24,9 @@ const NavigationScreen = () => {
                     headerShown: false,
                 }} />
                 <Stack.Screen name="CheckOut Screen" component={CheckOutScreen} options={{
+                    headerShown: false,
+                }} />
+                <Stack.Screen name="Timer Screen" component={Timer} options={{
                     headerShown: false,
                 }} />
             </Stack.Navigator>

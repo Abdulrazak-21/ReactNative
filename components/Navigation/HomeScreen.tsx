@@ -23,6 +23,12 @@ function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate('CheckOut Screen')}
         />
       </View>
+      <View style={styles.HomeScreenButton}>
+        <Button
+          title="Go to Check Out Screen"
+          onPress={() => navigation.navigate('CheckOut Screen')}
+        />
+      </View>
     </View>
   );
 }
