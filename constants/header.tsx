@@ -14,14 +14,13 @@ const Header = (props) => {
                     source={props.source}
                 />
             </View>
-
-            <View style={{ padding: 10, }}>
-                <Text style={styles.HeaderUserName}>Abdulrazak</Text>
+            <View style={{ justifyContent: 'center' }}>
+                <Text style={styles.HeaderUserName}>{props.username}</Text>
             </View>
             <View style={styles.HeaderIcon}>
-                <Feather style={{ paddingRight: 10, }} name="search" size={24} color="#003" onPress={onPress} />
-                <Feather style={{ paddingRight: 10, }} name="bell" size={24} color="#003" onPress={onPress} />
-                <Feather style={{ paddingRight: 10, }} name="log-out" size={24} color="#003" onPress={onPress} />
+                <Feather style={{ paddingRight: 10, }} name="search" size={24} color="#0099ff" onPress={onPress} />
+                <Feather style={{ paddingRight: 10, }} name="bell" size={24} color="#0099ff" onPress={onPress} />
+                <Feather style={{ paddingRight: 10, }} name="log-out" size={24} color="#0099ff" onPress={onPress} />
             </View>
 
         </View>
@@ -37,14 +36,15 @@ const styles = StyleSheet.create({
 
     },
     LeftImage: {
-        height: 50,
-        width: 50,
+        height: 45,
+        width: 45,
         borderRadius: 50,
     },
     HeaderUserName: {
         fontSize: 15,
         fontWeight: '700',
         color: '#000',
+        textAlign: 'center',
     },
     HeaderIcon: {
         flexDirection: 'row',
