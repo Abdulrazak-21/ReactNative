@@ -35,6 +35,12 @@ function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate('CanaraBank Screen')}
         />
       </View>
+      <View style={styles.HomeScreenButton}>
+        <Button
+          title="Go to Todo Screen"
+          onPress={() => navigation.navigate('Todo Screen')}
+        />
+      </View>
     </View>
   );
 }
