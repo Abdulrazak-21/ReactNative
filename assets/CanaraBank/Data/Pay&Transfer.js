@@ -40,6 +40,16 @@ const PayandTransfer = [
         title: 'CardLess',
         image: require('../../CanaraBank/Images/cardless.png'),
     },
+    {
+        id: '9',
+        title: 'ePassbook',
+        image: require('../Images/passbook.png'),
+    },
+    {
+        id: '10',
+        title: 'History',
+        image: require('../Images/history.png'),
+    },
 
 ];
 
