@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
     // alignContent: 'space-between',
     paddingBottom: 10,
     marginTop: 10,
+
   },
 });
 
