@@ -41,6 +41,12 @@ function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate('Todo Screen')}
         />
       </View>
+      <View style={styles.HomeScreenButton}>
+        <Button
+          title="Go to Timer Screen"
+          onPress={() => navigation.navigate('Timer Screen')}
+        />
+      </View>
     </View>
   );
 }
